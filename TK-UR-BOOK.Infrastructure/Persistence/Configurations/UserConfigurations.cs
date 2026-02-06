@@ -1,0 +1,32 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using TK_UR_BOOK.Domain.Comman;
+using TK_UR_BOOK.Domain.Entities;
+using TK_UR_BOOK.Infrastructure.Persistence.Converters;
+
+namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
+{
+    public class UserConfigurations : IEntityTypeConfiguration<User>
+    {
+        public void Configure(EntityTypeBuilder<User> builder)
+        {
+            builder.HasKey(u => u.Id);
+            builder.Property(u => u.Id)
+                .HasConversion(new StronglyTypedIdConverter<UserId>());
+            builder.Property(u => u.Username).IsRequired().HasMaxLength(50);
+            builder.Property(u => u.Email).IsRequired().HasMaxLength(100);
+            builder.HasMany(u => u.Groups).WithMany(g => g.Users)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserGroup",
+                    j => j.HasOne<Group>().WithMany().HasForeignKey("GroupId"),
+                    j => j.HasOne<User>().WithMany().HasForeignKey("UserId"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "GroupId");
+                        j.ToTable("UserGroups");
+                    }
+                );
+        }
+    }
+}
+

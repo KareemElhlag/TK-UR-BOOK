@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TK_UR_BOOK</RootNamespace>
+    <UserSecretsId>5e1b01a9-6596-425b-b2aa-740213efd7f9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="DTO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TK-UR-BOOK.Application\TK-UR-BOOK.Application.csproj" />
+    <ProjectReference Include="..\TK-UR-BOOK.Infrastructure\TK-UR-BOOK.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

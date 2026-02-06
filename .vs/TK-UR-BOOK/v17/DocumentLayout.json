@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D43EA94D-4B00-4E22-B1B6-65502D954223}|TK-UR-BOOK\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D43EA94D-4B00-4E22-B1B6-65502D954223}|TK-UR-BOOK\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D43EA94D-4B00-4E22-B1B6-65502D954223}|TK-UR-BOOK\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D43EA94D-4B00-4E22-B1B6-65502D954223}|TK-UR-BOOK\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\configurations\\permissionconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\configurations\\permissionconfigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\configurations\\groupconfigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\configurations\\groupconfigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\configurations\\bookconfigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\configurations\\bookconfigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\converters\\stronglytypedidconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\converters\\stronglytypedidconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\persistence\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\persistence\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK\\Program.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK\\Program.cs",
+              "RelativeToolTip": "TK-UR-BOOK\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T14:37:24.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK\\appsettings.json",
+              "RelativeDocumentMoniker": "TK-UR-BOOK\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK\\appsettings.json",
+              "RelativeToolTip": "TK-UR-BOOK\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T14:09:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T14:02:23.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PermissionConfigration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\PermissionConfigration.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\PermissionConfigration.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\PermissionConfigration.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\PermissionConfigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:58:44.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupConfigrations.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\GroupConfigrations.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\GroupConfigrations.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\GroupConfigrations.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\GroupConfigrations.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:40:53.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookConfigrations.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\BookConfigrations.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\BookConfigrations.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\BookConfigrations.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\BookConfigrations.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:29:16.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\UserConfigurations.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\UserConfigurations.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\UserConfigurations.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\Configurations\\UserConfigurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:19:48.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StronglyTypedIdConverter.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Converters\\StronglyTypedIdConverter.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\Converters\\StronglyTypedIdConverter.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\Converters\\StronglyTypedIdConverter.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\Converters\\StronglyTypedIdConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:17:28.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\DBContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Persistence\\DBContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Persistence\\DBContext\\AppDbContext.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Persistence\\DBContext\\AppDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:07:28.346Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 98,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
