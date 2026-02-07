@@ -12,6 +12,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public string? MetaData { get; private set; }
 
         public DateTime? Timestamp { get; private set; } = DateTime.UtcNow;
+        private UserActivity() { }
 
         public UserActivity(
             UserId userId,

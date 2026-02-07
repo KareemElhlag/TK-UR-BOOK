@@ -12,17 +12,25 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
         {
             builder.HasKey(g => g.Id);
             builder.Property(g => g.Name).IsRequired().HasMaxLength(100);
-            builder.Property(g => g.Id).HasConversion(new StronglyTypedIdConverter<GroupId>());
+            builder.Property(g => g.Id).HasConversion(new StronglyTypedIdConverter<GroupId , int>());
             builder.HasMany(g => g.Permissions).WithMany().UsingEntity(j =>
             {
                 j.ToTable("GroupPermissions");
 
-                j.Property("PermissionsId")
-                 .HasConversion(new StronglyTypedIdConverter<PermissionId>());
+                j.Property<PermissionId>("PermissionsId")
+                 .HasConversion(new StronglyTypedIdConverter<PermissionId, int>());
 
-                j.Property("GroupsId")
-                 .HasConversion(new StronglyTypedIdConverter<GroupId>());
+                j.Property<GroupId>("GroupsId")
+                 .HasConversion(new StronglyTypedIdConverter<GroupId, int>());
             });
+
+            builder.HasData(
+                 new Group(new GroupId(1) , "Super Admin", "this group have a super control Full Access for system"),
+                 new Group(new GroupId(3) , "Pubisher", "Pepole or office to sherd a books for sale"),
+                 new Group(new GroupId(2) , "User", "For a normal user")
+
+                );
+
 
         }
     }

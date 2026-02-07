@@ -9,8 +9,9 @@ namespace TK_UR_BOOK.Domain.Entities
         private Permission()
         {
         }
-        public Permission(string name, string code)
+        public Permission(PermissionId permissionId ,string name, string code)
         {
+            Id = permissionId;
             Name = name;
             Code = code;
         }

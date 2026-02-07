@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "TK-UR-BOOK.Application/1.0.0": {
+        "runtime": {
+          "TK-UR-BOOK.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TK-UR-BOOK.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

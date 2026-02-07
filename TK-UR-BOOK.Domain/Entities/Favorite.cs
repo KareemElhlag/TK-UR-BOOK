@@ -7,6 +7,8 @@ namespace TK_UR_BOOK.Domain.Entities
         public UserId UserId { get; private set; }
         public BookId BookId { get; private set; }
         public DateTime AddedAt { get; private set; } = DateTime.UtcNow;
+
+        private Favorite() { }
         public Favorite(
             UserId userId
             , BookId bookId

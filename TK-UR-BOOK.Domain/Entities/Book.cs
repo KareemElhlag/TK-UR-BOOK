@@ -21,7 +21,7 @@ namespace TK_UR_BOOK.Domain.Entities
         private Book()
         {
         }
-        public Book(string title, string author, string isbn, Money price, int Qun, int categoryId,
+        public Book(BookId bookId, string title, string author, string isbn, Money price, int Qun, int categoryId,
         string description = "")
         {
             if (string.IsNullOrWhiteSpace(title))
@@ -34,6 +34,7 @@ namespace TK_UR_BOOK.Domain.Entities
                 throw new ArgumentException("Stock quantity cannot be negative", nameof(Qun));
             if (price.Amount < 0)
                 throw new ArgumentException("Price cannot be negative", nameof(price));
+            Id = bookId;
 
             Title = title;
             Author = author;

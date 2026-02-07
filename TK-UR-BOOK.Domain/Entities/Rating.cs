@@ -12,6 +12,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public string? Comment { get; private set; }
 
         public DateTime RatedAt { get; private set; } = DateTime.UtcNow;
+        private Rating() { }
 
         public Rating(
             UserId userId,

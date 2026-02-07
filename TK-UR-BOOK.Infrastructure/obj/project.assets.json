@@ -1599,6 +1599,16 @@
           }
         }
       },
+      "TK-UR-BOOK.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/TK-UR-BOOK.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TK-UR-BOOK.Application.dll": {}
+        }
+      },
       "TK-UR-BOOK.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4712,6 +4722,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "TK-UR-BOOK.Application/1.0.0": {
+      "type": "project",
+      "path": "../TK-UR-BOOK.Application/TK-UR-BOOK.Application.csproj",
+      "msbuildProject": "../TK-UR-BOOK.Application/TK-UR-BOOK.Application.csproj"
+    },
     "TK-UR-BOOK.Domain/1.0.0": {
       "type": "project",
       "path": "../TK-UR-BOOK.Domain/TK-UR-BOOK.Domain.csproj",
@@ -4721,9 +4736,11 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "TK-UR-BOOK.Application >= 1.0.0",
       "TK-UR-BOOK.Domain >= 1.0.0"
     ]
   },
@@ -4759,6 +4776,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj": {
+              "projectPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj"
+            },
             "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj": {
               "projectPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj"
             }
@@ -4782,6 +4802,12 @@
         "targetAlias": "net9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
           },

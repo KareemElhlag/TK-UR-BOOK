@@ -14,8 +14,9 @@ namespace TK_UR_BOOK.Domain.Entities
         private Group()
         {
         }
-        public Group(string name, string description)
+        public Group(GroupId id ,string name, string description)
         {
+            Id = id;
             Name = name;
             Description = description;
         }

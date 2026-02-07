@@ -11,6 +11,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public Money PaidAmount { get; private set; }
 
         public string TransactionId { get; private set; } 
+        private Purchase() { }
 
 
         public Purchase(UserId userId, BookId bookId, Money paidAmount, string transactionId)

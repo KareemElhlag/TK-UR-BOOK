@@ -20,8 +20,9 @@ namespace TK_UR_BOOK.Domain.Entities
         private User()
         {
         }
-        public User(string username, string email, string passwordHash, string? phoneNumber = null)
+        public User(UserId userId, string username, string email, string passwordHash, string? phoneNumber = null)
         {
+            Id = userId;
             Username = username;
             Email = email;
             PasswordHash = passwordHash;

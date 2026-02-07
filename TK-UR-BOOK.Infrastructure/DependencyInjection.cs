@@ -10,7 +10,8 @@ namespace TK_UR_BOOK.Infrastructure
         public static IServiceCollection ServiceDescriptors(this IServiceCollection services , IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<AppDbContext>(op => op.UseSqlServer(connectionString , b => b.MigrationsAssembly(typeof(AppContext).Assembly.f));
+            services.AddDbContext<AppDbContext>(op => op.UseSqlServer(connectionString ,
+                x => x.MigrationsAssembly("TK-UR-BOOK.Infrastructure")));
             return services;
         }
 

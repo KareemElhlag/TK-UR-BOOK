@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK-UR-BOOK.API", "TK-UR-BOOK\TK-UR-BOOK.API.csproj", "{D43EA94D-4B00-4E22-B1B6-65502D954223}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK-UR-BOOK.Domain", "TK-UR-BOOK.Domain\TK-UR-BOOK.Domain.csproj", "{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK-UR-BOOK.Infrastructure", "TK-UR-BOOK.Infrastructure\TK-UR-BOOK.Infrastructure.csproj", "{750F51B7-3828-484D-ABEA-E9A720A84292}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK-UR-BOOK.Application", "TK-UR-BOOK.Application\TK-UR-BOOK.Application.csproj", "{F4D44BA2-6CA0-4A46-902D-FA3586840A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TK-UR-BOOK.API", "TK-UR-BOOK.API\TK-UR-BOOK.API.csproj", "{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D43EA94D-4B00-4E22-B1B6-65502D954223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D43EA94D-4B00-4E22-B1B6-65502D954223}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D43EA94D-4B00-4E22-B1B6-65502D954223}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D43EA94D-4B00-4E22-B1B6-65502D954223}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{F4D44BA2-6CA0-4A46-902D-FA3586840A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D44BA2-6CA0-4A46-902D-FA3586840A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D44BA2-6CA0-4A46-902D-FA3586840A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

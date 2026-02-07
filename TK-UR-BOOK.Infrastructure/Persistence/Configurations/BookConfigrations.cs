@@ -11,7 +11,7 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Book> builder)
         {
             builder.HasKey(b => b.Id);
-            builder.Property(b => b.Id).HasConversion(new StronglyTypedIdConverter<BookId>());
+            builder.Property(b => b.Id).HasConversion(new StronglyTypedIdConverter<BookId , Guid>());
             builder.Property(b => b.Title).IsRequired().HasMaxLength(200);
             builder.Property(b => b.Author).IsRequired().HasMaxLength(100);
             builder.Property(b => b.ISBN).IsRequired().HasMaxLength(20);
