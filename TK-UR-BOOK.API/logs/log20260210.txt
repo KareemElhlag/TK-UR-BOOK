@@ -1,0 +1,314 @@
+2026-02-10 14:06:08.735 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-02-10 14:06:08.801 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-02-10 14:06:08.841 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-02-10 14:06:08.877 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-02-10 14:06:08.888 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-02-10 14:06:08.890 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-02-10 14:06:08.925 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-02-10 14:06:08.935 +03:00 [INF] Applying migration '20260210110550_UpdateMoneyValueObject'.
+2026-02-10 14:06:08.957 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260210110550_UpdateMoneyValueObject', N'9.0.0');
+2026-02-10 14:06:08.965 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-02-10 14:09:05.191 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-02-10 14:09:05.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:09:05.936 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:09:05.938 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:09:05.938 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:09:06.166 +03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-02-10 14:09:06.302 +03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-02-10 14:09:06.345 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 200 null text/plain; charset=utf-8 611.0675ms
+2026-02-10 14:09:06.416 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/favicon.ico - null null
+2026-02-10 14:09:06.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/favicon.ico - 404 null null 7.6757ms
+2026-02-10 14:09:06.424 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44321/favicon.ico, Response status code: 404
+2026-02-10 14:16:20.501 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:16:20.612 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:16:20.612 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:16:20.613 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:16:20.859 +03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-02-10 14:16:20.951 +03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-02-10 14:16:20.960 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 200 null text/plain; charset=utf-8 478.794ms
+2026-02-10 14:17:07.790 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:17:07.960 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:17:07.962 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:17:07.962 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:17:08.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 404 null null 489.3628ms
+2026-02-10 14:17:08.286 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44321/, Response status code: 404
+2026-02-10 14:17:22.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:17:22.566 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:17:22.567 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:17:22.567 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:17:22.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 404 null null 513.4906ms
+2026-02-10 14:17:22.850 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44321/, Response status code: 404
+2026-02-10 14:17:44.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:17:44.907 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:17:44.909 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:17:44.909 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:17:45.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 404 null null 510.6175ms
+2026-02-10 14:17:45.222 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44321/, Response status code: 404
+2026-02-10 14:20:39.037 +03:00 [INF] Starting the Web Host...
+2026-02-10 14:20:39.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:20:39.897 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:20:39.898 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:20:39.899 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:20:40.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.html - null null
+2026-02-10 14:20:40.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 301 null null 506.6852ms
+2026-02-10 14:20:40.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.html - 200 null text/html;charset=utf-8 255.5724ms
+2026-02-10 14:20:40.381 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui.css - null null
+2026-02-10 14:20:40.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.css - null null
+2026-02-10 14:20:40.384 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - null null
+2026-02-10 14:20:40.384 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - null null
+2026-02-10 14:20:40.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_vs/browserLink - null null
+2026-02-10 14:20:40.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.js - null null
+2026-02-10 14:20:40.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-10 14:20:40.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.js - 200 null application/javascript;charset=utf-8 24.964ms
+2026-02-10 14:20:40.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 31.0764ms
+2026-02-10 14:20:40.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.css - 200 152 text/css 223.8658ms
+2026-02-10 14:20:40.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui.css - 200 26248 text/css 226.0707ms
+2026-02-10 14:20:40.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - 200 77848 text/javascript 267.6594ms
+2026-02-10 14:20:40.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - 200 424871 text/javascript 270.3434ms
+2026-02-10 14:20:40.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_vs/browserLink - 200 null text/javascript; charset=UTF-8 312.2485ms
+2026-02-10 14:20:40.807 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/favicon-32x32.png - null null
+2026-02-10 14:20:40.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/favicon-32x32.png - 200 628 image/png 3.6367ms
+2026-02-10 14:20:40.842 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - null null
+2026-02-10 14:20:40.856 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.6521ms
+2026-02-10 14:21:05.040 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44321/api/Book - application/json 162
+2026-02-10 14:21:05.059 +03:00 [INF] Executing endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:21:05.100 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TK_UR_BOOK.Application.DTOs.CreateBookDto) on controller TK_UR_BOOK.Controllers.BookController (TK-UR-BOOK.API).
+2026-02-10 14:21:05.110 +03:00 [INF] Executed action TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API) in 5.7069ms
+2026-02-10 14:21:05.119 +03:00 [INF] Executed endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:21:05.187 +03:00 [ERR] An unhandled exception has occurred.
+System.InvalidOperationException: Unable to resolve service for type 'TK_UR_BOOK.Application.Interfaces.IBookService' while attempting to activate 'TK_UR_BOOK.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at TK_UR_BOOK.Infrastructure.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\Middlewares\ExceptionHandlingMiddleware.cs:line 24
+2026-02-10 14:21:05.641 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44321/api/Book - 500 null application/json 600.577ms
+2026-02-10 14:22:09.444 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44321/api/Book - application/json 162
+2026-02-10 14:22:09.446 +03:00 [INF] Executing endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:22:09.446 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TK_UR_BOOK.Application.DTOs.CreateBookDto) on controller TK_UR_BOOK.Controllers.BookController (TK-UR-BOOK.API).
+2026-02-10 14:22:09.451 +03:00 [INF] Executed action TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API) in 3.7682ms
+2026-02-10 14:22:09.453 +03:00 [INF] Executed endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:22:09.510 +03:00 [ERR] An unhandled exception has occurred.
+System.InvalidOperationException: Unable to resolve service for type 'TK_UR_BOOK.Application.Interfaces.IBookService' while attempting to activate 'TK_UR_BOOK.Controllers.BookController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at TK_UR_BOOK.Infrastructure.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\Middlewares\ExceptionHandlingMiddleware.cs:line 24
+2026-02-10 14:22:09.515 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44321/api/Book - 500 null application/json 70.8793ms
+2026-02-10 14:26:53.918 +03:00 [INF] Starting the Web Host...
+2026-02-10 14:26:54.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:26:54.617 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:26:54.618 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:26:54.618 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:26:54.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.html - null null
+2026-02-10 14:26:54.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 301 null null 420.5661ms
+2026-02-10 14:26:54.826 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.html - 304 null null 118.4467ms
+2026-02-10 14:26:54.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui.css - null null
+2026-02-10 14:26:54.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.css - null null
+2026-02-10 14:26:54.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - null null
+2026-02-10 14:26:54.940 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-10 14:26:54.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_vs/browserLink - null null
+2026-02-10 14:26:54.963 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - null null
+2026-02-10 14:26:55.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.js - null null
+2026-02-10 14:26:55.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.js - 304 null null 2.6819ms
+2026-02-10 14:26:55.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 171.5213ms
+2026-02-10 14:26:55.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui.css - 304 null null 241.0909ms
+2026-02-10 14:26:55.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - 304 null null 171.598ms
+2026-02-10 14:26:55.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.css - 304 null null 240.8505ms
+2026-02-10 14:26:55.134 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - 304 null null 240.9328ms
+2026-02-10 14:26:55.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_vs/browserLink - 200 null text/javascript; charset=UTF-8 253.0113ms
+2026-02-10 14:26:55.346 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - null null
+2026-02-10 14:26:55.366 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.6061ms
+2026-02-10 14:28:26.016 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44321/api/Book - application/json 165
+2026-02-10 14:28:26.038 +03:00 [INF] Executing endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:28:26.078 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TK_UR_BOOK.Application.DTOs.CreateBookDto) on controller TK_UR_BOOK.Controllers.BookController (TK-UR-BOOK.API).
+2026-02-10 14:28:47.563 +03:00 [INF] Executed action TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API) in 21483.2582ms
+2026-02-10 14:28:47.564 +03:00 [INF] Executed endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:28:47.581 +03:00 [ERR] An unhandled exception has occurred.
+System.MissingMethodException: Constructor on type 'TK_UR_BOOK.Infrastructure.Repositories.GenericRepository`1[[TK_UR_BOOK.Domain.Entities.Book, TK-UR-BOOK.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' not found.
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at TK_UR_BOOK.Infrastructure.Persistence.UnitOfWork.Repository[TEntity]() in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\Persistence\UnitOfWork.cs:line 29
+   at TK_UR_BOOK.Application.Services.BookService.CreateBookAsync(CreateBookDto dto) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\Services\BookService.cs:line 28
+   at TK_UR_BOOK.Controllers.BookController.Create(CreateBookDto dto) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\Controllers\BookController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at TK_UR_BOOK.Infrastructure.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\Middlewares\ExceptionHandlingMiddleware.cs:line 24
+2026-02-10 14:28:47.643 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44321/api/Book - 500 null application/json 21626.8135ms
+2026-02-10 14:36:16.757 +03:00 [INF] Starting the Web Host...
+2026-02-10 14:36:17.478 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-10 14:36:17.800 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-10 14:36:17.801 +03:00 [INF] Hosting environment: Development
+2026-02-10 14:36:17.802 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-10 14:36:17.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.html - null null
+2026-02-10 14:36:17.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 301 null null 471.2333ms
+2026-02-10 14:36:18.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.html - 304 null null 163.725ms
+2026-02-10 14:36:18.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui.css - null null
+2026-02-10 14:36:18.216 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.js - null null
+2026-02-10 14:36:18.216 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-10 14:36:18.216 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - null null
+2026-02-10 14:36:18.223 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - null null
+2026-02-10 14:36:18.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_vs/browserLink - null null
+2026-02-10 14:36:18.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.css - null null
+2026-02-10 14:36:18.321 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.js - 304 null null 147.2795ms
+2026-02-10 14:36:18.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 204.5068ms
+2026-02-10 14:36:18.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.css - 304 null null 75.9429ms
+2026-02-10 14:36:18.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui.css - 304 null null 231.6302ms
+2026-02-10 14:36:18.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - 304 null null 172.9023ms
+2026-02-10 14:36:18.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - 304 null null 221.4ms
+2026-02-10 14:36:18.433 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_vs/browserLink - 200 null text/javascript; charset=UTF-8 165.223ms
+2026-02-10 14:36:18.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - null null
+2026-02-10 14:36:18.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.9841ms
+2026-02-10 14:36:33.359 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44321/api/Book - application/json 162
+2026-02-10 14:36:33.380 +03:00 [INF] Executing endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:36:33.447 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TK_UR_BOOK.Application.DTOs.CreateBookDto) on controller TK_UR_BOOK.Controllers.BookController (TK-UR-BOOK.API).
+2026-02-10 14:36:37.371 +03:00 [ERR] Failed executing DbCommand (233ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (Size = 20), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 200), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([Id], [Author], [CategoryId], [CreatedAt], [CreatedBy], [DeletedAt], [Description], [ISBN], [LastModifiedAt], [LastModifiedBy], [StockQuantity], [Title], [Price], [Currency])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2026-02-10 14:36:37.441 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'TK_UR_BOOK.Infrastructure.Persistence.DBContext.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Categories_CategoryId". The conflict occurred in database "TKURBOOK_Db", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:311949e1-86dd-4e68-9ad6-adc4db8ae055
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Categories_CategoryId". The conflict occurred in database "TKURBOOK_Db", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:311949e1-86dd-4e68-9ad6-adc4db8ae055
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-02-10 14:37:00.175 +03:00 [INF] Executed action TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API) in 26724.4236ms
+2026-02-10 14:37:00.175 +03:00 [INF] Executed endpoint 'TK_UR_BOOK.Controllers.BookController.Create (TK-UR-BOOK.API)'
+2026-02-10 14:37:00.281 +03:00 [ERR] An unhandled exception has occurred.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Categories_CategoryId". The conflict occurred in database "TKURBOOK_Db", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:311949e1-86dd-4e68-9ad6-adc4db8ae055
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at TK_UR_BOOK.Application.Services.BookService.CreateBookAsync(CreateBookDto dto) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\Services\BookService.cs:line 29
+   at TK_UR_BOOK.Controllers.BookController.Create(CreateBookDto dto) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\Controllers\BookController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at TK_UR_BOOK.Infrastructure.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\Middlewares\ExceptionHandlingMiddleware.cs:line 24
+2026-02-10 14:37:00.316 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44321/api/Book - 500 null application/json 26957.2026ms

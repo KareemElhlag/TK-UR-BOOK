@@ -1,11 +1,15 @@
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\bin\Debug\net9.0\TK-UR-BOOK.Application.deps.json
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\bin\Debug\net9.0\TK-UR-BOOK.Application.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\bin\Debug\net9.0\TK-UR-BOOK.Application.pdb
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\bin\Debug\net9.0\TK-UR-BOOK.Domain.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\bin\Debug\net9.0\TK-UR-BOOK.Domain.pdb
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.csproj.AssemblyReference.cache
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.AssemblyInfoInputs.cache
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.AssemblyInfo.cs
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.sourcelink.json
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BO.0CB08ABB.Up2Date
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\refint\TK-UR-BOOK.Application.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Application\obj\Debug\net9.0\TK-UR-BOOK.Application.pdb

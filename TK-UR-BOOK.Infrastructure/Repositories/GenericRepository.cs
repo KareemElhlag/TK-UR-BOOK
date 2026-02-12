@@ -1,48 +1,79 @@
 ﻿using System.Linq.Expressions;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using TK_UR_BOOK.Application.Interfaces;
+using TK_UR_BOOK.Infrastructure.Persistence.DBContext;
 
 namespace TK_UR_BOOK.Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        public Task AddAsync(T entity)
+        private readonly AppDbContext _context;
+        private readonly DbSet<T> _dbSet;
+        public GenericRepository(AppDbContext Contextt)
         {
-            throw new NotImplementedException();
+            _context = Contextt;
+            _dbSet = _context.Set<T>();
+        }
+        public async Task AddAsync(T entity)
+        => await _dbSet.AddAsync(entity);
+
+        public async Task AddRangeAsync(IEnumerable<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                await _dbSet.AddAsync(entity);
+            }
         }
 
-        public Task AddRangeAsync(IEnumerable<T> entities)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<T?> GetByIdAsync<TId>(TId id) where TId : notnull
+        => await _dbSet.FindAsync(id);
 
-        public Task<T?> GetByIdAsync<TId>(TId id) where TId : notnull
+        public async Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] incloudes)
         {
-            throw new NotImplementedException();
-        }
+            IQueryable<T> query = _dbSet;
+            if (incloudes != null)
+            {
+                foreach (var include in incloudes)
+                {
+                    query = query.Include(include);
+                }
+            }
 
-        public Task<T?> GetFirstOrDefaultAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] incloudes)
-        {
-            throw new NotImplementedException();
+            return await query.FirstOrDefaultAsync(predicate);
         }
 
         public IQueryable<T> GetQueryable(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IQueryable<T>>? incloud = null)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = _dbSet;
+            if (incloud != null)
+            {
+                query = incloud(query);
+            }
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+
+            return query.AsNoTracking();
         }
 
         public void Remove(T entity)
-        {
-            throw new NotImplementedException();
-        }
+
+          => _dbSet.Remove(entity);
+
 
         public void RemoveRange(IEnumerable<T> entities)
         {
-            throw new NotImplementedException();
+            foreach (var entity in entities)
+            {
+                _dbSet.Remove(entity);
+            }
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
         }
     }
 }

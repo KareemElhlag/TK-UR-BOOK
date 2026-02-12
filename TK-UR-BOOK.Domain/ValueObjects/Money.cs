@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TK_UR_BOOK.Domain.Common;
+using TK_UR_BOOK.Domain.Enums;
 
 namespace TK_UR_BOOK.Domain.ValueObjects
 {
-    public class Money
+    public class Money : ValueObject
     {
         public decimal Amount { get; private set; }
-        public string Currency { get; private set; }
+        public Currency Currency { get; private set; }
         private Money()
         {
         }
-        public Money(decimal amount, string currency)
+        public Money(decimal amount, Currency currency)
         {
             if (amount < 0)
                 throw new ArgumentException("Amount cannot be negative", nameof(amount));
-            if (string.IsNullOrWhiteSpace(currency))
-                throw new ArgumentException("Currency cannot be null or empty", nameof(currency));
+
             Amount = amount;
             Currency = currency;
         }
+
+
         public override string ToString()
         {
             return $"{Amount} {Currency}";
@@ -41,6 +39,12 @@ namespace TK_UR_BOOK.Domain.ValueObjects
             if (this.Amount < other.Amount)
                 throw new InvalidOperationException("Resulting amount cannot be negative");
             return new Money(this.Amount - other.Amount, this.Currency);
+        }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            yield return Amount;
+            yield return Currency;
         }
     }
 }

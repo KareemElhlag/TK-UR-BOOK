@@ -13,7 +13,9 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
             {
                 mony.Property(m => m.Amount).
                 HasColumnName("PaidAmount").HasPrecision(18, 2);
-                mony.Property(m => m.Currency).HasColumnName("Currency").HasMaxLength(3);
+                mony.Property(m => m.Currency)
+                .HasColumnName("Currency").HasMaxLength(3)
+                .HasConversion<String>();
             });
         }
     }

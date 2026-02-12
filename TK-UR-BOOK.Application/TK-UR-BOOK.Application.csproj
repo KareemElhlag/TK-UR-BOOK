@@ -9,7 +9,15 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TK-UR-BOOK.Domain\TK-UR-BOOK.Domain.csproj" />
   </ItemGroup>
 
 </Project>

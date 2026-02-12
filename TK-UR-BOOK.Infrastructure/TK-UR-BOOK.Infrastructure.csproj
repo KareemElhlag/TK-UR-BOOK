@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TK-UR-BOOK.Application\TK-UR-BOOK.Application.csproj" />
     <ProjectReference Include="..\TK-UR-BOOK.Domain\TK-UR-BOOK.Domain.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.9" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
 	    <PrivateAssets>all</PrivateAssets>

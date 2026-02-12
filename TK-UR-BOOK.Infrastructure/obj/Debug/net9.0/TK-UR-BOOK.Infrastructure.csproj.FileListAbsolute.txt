@@ -2,7 +2,9 @@ C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\T
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Infrastructure.runtimeconfig.json
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Infrastructure.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Infrastructure.pdb
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Application.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Domain.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Application.pdb
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\bin\Debug\net9.0\TK-UR-BOOK.Domain.pdb
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\obj\Debug\net9.0\TK-UR-BOOK.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Infrastructure\obj\Debug\net9.0\TK-UR-BOOK.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig

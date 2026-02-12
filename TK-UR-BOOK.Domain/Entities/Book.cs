@@ -18,6 +18,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public int StockQuantity { get; private set; }
         public int CategoryId { get; private set; }
         public Category Category { get; private set; } = null!;
+        public bool IsDeleted { get; private set; }
         private Book()
         {
         }
@@ -64,6 +65,10 @@ namespace TK_UR_BOOK.Domain.Entities
             Title = title;
             Author = author;
             Description = description;
+        }
+        public void MarkAsDeleted()
+        {
+            IsDeleted = true;
         }
     }
 }

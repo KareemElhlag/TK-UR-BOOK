@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +53,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -187,6 +201,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.9, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
