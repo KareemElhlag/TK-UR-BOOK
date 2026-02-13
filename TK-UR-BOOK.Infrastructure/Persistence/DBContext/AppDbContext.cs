@@ -80,9 +80,6 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.DBContext
             .HaveConversion<StronglyTypedIdConverter<BookId, Guid>>();
             modelConfiguration.Properties<UserId>()
         .HaveConversion<StronglyTypedIdConverter<UserId, Guid>>();
-
-
-
         }
     }
 

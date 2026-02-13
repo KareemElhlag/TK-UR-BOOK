@@ -5,6 +5,7 @@
     <RootNamespace>TK_UR_BOOK.Infrastructure</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>b22b4fce-c897-44ca-a43f-b2b39ddc8e9c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TK-UR-BOOK.Application\TK-UR-BOOK.Application.csproj" />
     <ProjectReference Include="..\TK-UR-BOOK.Domain\TK-UR-BOOK.Domain.csproj" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.9" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">

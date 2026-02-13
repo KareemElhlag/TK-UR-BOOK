@@ -24,6 +24,7 @@ namespace TK_UR_BOOK.Infrastructure
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<GetBookQueryValidator>();
             services.AddScoped<GetBooksQueryHandler>();
+            services.AddScoped<IHashingPassword , PasswordHasher>();
             return services;
         }
 
