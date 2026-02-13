@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TK-UR-BOOK.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c0ddb83abfaa63f3054c37019f749731441ac81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be287da064120f96b32e5dcc3f74ef5f10793a92")]
 [assembly: System.Reflection.AssemblyProductAttribute("TK-UR-BOOK.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TK-UR-BOOK.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

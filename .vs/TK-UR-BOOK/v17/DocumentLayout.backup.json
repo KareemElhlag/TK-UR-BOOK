@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\validations\\queryvalidator\\getbookqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\validations\\queryvalidator\\getbookqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\usercommands\\confirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\usercommands\\confirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\bookquery\\getbooksqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\bookquery\\getbooksqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\bookquery\\getbookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\bookquery\\getbookquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|solutionrelative:tk-ur-book.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750F51B7-3828-484D-ABEA-E9A720A84292}|TK-UR-BOOK.Infrastructure\\TK-UR-BOOK.Infrastructure.csproj|solutionrelative:tk-ur-book.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\usercommands\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\usercommands\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetBookQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Validations\\QueryValidator\\GetBookQueryValidator.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\Validations\\QueryValidator\\GetBookQueryValidator.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Validations\\QueryValidator\\GetBookQueryValidator.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\Validations\\QueryValidator\\GetBookQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20260213215855_AddIsDeletedColumn.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\Migrations\\20260213215855_AddIsDeletedColumn.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:48:20.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetBookQuery.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBookQuery.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBookQuery.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBookQuery.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBookQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:39:52.746Z",
+              "WhenOpened": "2026-02-13T21:58:55.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Services\\BookService.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\Services\\BookService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAAZAAAAAAAAAA==",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:37:36.224Z",
+              "WhenOpened": "2026-02-13T21:29:44.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfirmEmailCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\UserCommands\\ConfirmEmailCommandHandler.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\UserCommands\\ConfirmEmailCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\UserCommands\\ConfirmEmailCommandHandler.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\UserCommands\\ConfirmEmailCommandHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T16:42:52.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetBooksQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBooksQueryHandler.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBooksQueryHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBooksQueryHandler.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\BookQuery\\GetBooksQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:27:51.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.API\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\BookController.cs",
-              "RelativeToolTip": "TK-UR-BOOK.API\\Controllers\\BookController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:18:14.802Z",
+              "WhenOpened": "2026-02-13T15:38:20.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Title": "RegisterUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\UserCommands\\RegisterUserCommand.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\UserCommands\\RegisterUserCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\UserCommands\\RegisterUserCommand.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\UserCommands\\RegisterUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T11:12:33.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T12:38:55.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T12:39:39.757Z"
             }
           ]
         }

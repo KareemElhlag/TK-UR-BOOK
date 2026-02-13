@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "TK_UR_BOOK.Controllers.BookController",
-    "Method": "Create",
+    "Method": "CreateBookAsync",
     "RelativePath": "api/Book",
     "HttpMethod": "POST",
     "IsController": true,
@@ -33,7 +33,7 @@
   },
   {
     "ContainingType": "TK_UR_BOOK.Controllers.BookController",
-    "Method": "UpdatePrice",
+    "Method": "UpdateBookAsync",
     "RelativePath": "api/Book",
     "HttpMethod": "PUT",
     "IsController": true,

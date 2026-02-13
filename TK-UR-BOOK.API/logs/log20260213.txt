@@ -1,0 +1,24 @@
+2026-02-13 16:46:39.693 +03:00 [INF] Starting the Web Host...
+2026-02-13 16:46:40.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/ - null null
+2026-02-13 16:46:41.146 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-13 16:46:41.148 +03:00 [INF] Hosting environment: Development
+2026-02-13 16:46:41.148 +03:00 [INF] Content root path: C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API
+2026-02-13 16:46:42.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.html - null null
+2026-02-13 16:46:42.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/ - 301 null null 1413.3358ms
+2026-02-13 16:46:42.493 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.html - 304 null null 226.3107ms
+2026-02-13 16:46:42.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-13 16:46:42.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui.css - null null
+2026-02-13 16:46:42.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.css - null null
+2026-02-13 16:46:42.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - null null
+2026-02-13 16:46:42.693 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/_vs/browserLink - null null
+2026-02-13 16:46:42.746 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - null null
+2026-02-13 16:46:42.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/index.js - null null
+2026-02-13 16:46:42.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.js - 304 null null 3.934ms
+2026-02-13 16:46:42.871 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 278.8797ms
+2026-02-13 16:46:42.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-bundle.js - 304 null null 142.9415ms
+2026-02-13 16:46:42.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui-standalone-preset.js - 304 null null 298.2019ms
+2026-02-13 16:46:42.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger-ui.css - 304 null null 308.2562ms
+2026-02-13 16:46:42.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/index.css - 304 null null 308.2914ms
+2026-02-13 16:46:43.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/_vs/browserLink - 200 null text/javascript; charset=UTF-8 343.7585ms
+2026-02-13 16:46:43.203 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - null null
+2026-02-13 16:46:43.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44321/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.2216ms

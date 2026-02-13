@@ -8,7 +8,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public string Email { get; private set; }
         public string PasswordHash { get; private set; }
         public string? PhoneNumber { get; private set; }
-
+        public string? EmailVerificationToken { get; private set; }
         public bool IsEmailConfirmed { get; private set; }
         public bool IsActive { get; private set; } = true;
         public int AccessFailedCount { get; private set; }
@@ -31,8 +31,6 @@ namespace TK_UR_BOOK.Domain.Entities
         }
 
 
-
-
         public void AddToGroup(Group group)
         {
             if (!_groups.Any(g => g.Id == group.Id))
@@ -47,7 +45,16 @@ namespace TK_UR_BOOK.Domain.Entities
         }
         public void Deactivate() => IsActive = false;
 
+        public void GenerateEmailVerificationToken()
+        {
+            EmailVerificationToken = Guid.NewGuid().ToString();
+        }
 
+        public void ConfirmEmail()
+        {
+            IsEmailConfirmed = true;
+            EmailVerificationToken = null;
+        }
 
     }
 }

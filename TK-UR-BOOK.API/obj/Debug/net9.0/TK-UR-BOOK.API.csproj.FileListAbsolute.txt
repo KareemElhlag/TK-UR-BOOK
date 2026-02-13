@@ -166,6 +166,7 @@ C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\TK-UR-BOOK.A
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\TK-UR-BOOK.API.pdb
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\BCrypt.Net-Next.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\Humanizer.dll
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -347,3 +348,6 @@ C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\obj\Debug\net9.0\refint\TK-UR
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\obj\Debug\net9.0\TK-UR-BOOK.API.pdb
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\obj\Debug\net9.0\TK-UR-BOOK.API.genruntimeconfig.cache
 C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\obj\Debug\net9.0\ref\TK-UR-BOOK.API.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\MailKit.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.API\bin\Debug\net9.0\MimeKit.dll

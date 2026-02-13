@@ -18,7 +18,7 @@ namespace TK_UR_BOOK.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateBookDto dto)
+        public async Task<IActionResult> CreateBookAsync(CreateBookDto dto)
         {
             var bookId = await _bookService.CreateBookAsync(dto);
 
@@ -36,7 +36,7 @@ namespace TK_UR_BOOK.Controllers
             return NotFound(bookDetails.Error);
         }
         [HttpPut]
-        public async Task<IActionResult> UpdatePrice(UpdateBookDto dto)
+        public async Task<IActionResult> UpdateBookAsync(UpdateBookDto dto)
         {
             var result = await _bookService.UpdateBookAsync(dto);
             if (result.IsSuccess)
@@ -56,6 +56,11 @@ namespace TK_UR_BOOK.Controllers
             return NotFound(result.Error);
         }
         [HttpGet("All")]
+        ///
+        /// <summary>
+        /// this endpoint is used to get all books with filters , pagination , and sorting 
+        /// <summary/>
+        ///
         public async Task<IActionResult> GetBooksWithFiltratoinsAsync([FromQuery] GetBookQuery query)
         {
             var result = await _bookService.GetAllBooks(query);
