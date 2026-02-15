@@ -4,7 +4,8 @@ namespace TK_UR_BOOK.Domain.Entities
 {
     public class RefreshToken : AuditTableEntity<long>
     {
-        public UserId UserId { get;private set; }
+        public User User { get;private set; }
+        public UserId UserId { get; private set; }
         public string Token { get; private set; } = string.Empty;
 
         public DateTime ExpiresAt { get; private set; }
@@ -20,7 +21,7 @@ namespace TK_UR_BOOK.Domain.Entities
         private RefreshToken() { }
         private RefreshToken(UserId userId, string token, DateTime expiresAt)
         {
-            UserId = userId;
+           this.UserId = userId;
             Token = token;
             ExpiresAt = expiresAt;
         }

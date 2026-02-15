@@ -3,7 +3,6 @@ using System.Text.Json;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
 namespace TK_UR_BOOK.Infrastructure.Middlewares
 {

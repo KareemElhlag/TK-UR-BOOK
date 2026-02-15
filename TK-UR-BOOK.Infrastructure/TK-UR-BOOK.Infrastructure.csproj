@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0" />
     <ProjectReference Include="..\TK-UR-BOOK.Application\TK-UR-BOOK.Application.csproj" />
     <ProjectReference Include="..\TK-UR-BOOK.Domain\TK-UR-BOOK.Domain.csproj" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
@@ -29,6 +30,8 @@
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.16.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.16.0" />
   </ItemGroup>
 
 </Project>

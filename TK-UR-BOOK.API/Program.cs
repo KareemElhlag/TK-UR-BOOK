@@ -1,6 +1,4 @@
 ﻿using Serilog;
-using TK_UR_BOOK.Application.Services;
-using TK_UR_BOOK.Controllers;
 using TK_UR_BOOK.Infrastructure;
 using TK_UR_BOOK.Infrastructure.Middlewares;
 
@@ -16,7 +14,6 @@ builder.Host.UseSerilog();
 
 builder.Services.ServiceDescriptors(builder.Configuration);
 
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -28,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TK_UR_BOOK API V1");
-        c.RoutePrefix = string.Empty; // عشان يفتح Swagger أول ما تشغل المشروع [cite: 2026-02-09]
+        c.RoutePrefix = string.Empty;
     });
 }
 
@@ -36,7 +33,9 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
-app.UseAuthorization(); // ضيف دي لو ناوي تستخدم صلاحيات لاحقاً
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 try
@@ -51,6 +50,6 @@ catch (Exception ex)
 }
 finally
 {
-    Log.CloseAndFlush(); // تأكيد حفظ الـ Logs [cite: 2026-02-10]
+    Log.CloseAndFlush(); 
 }
 app.Run();

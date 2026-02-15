@@ -26,6 +26,7 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
                         j.ToTable("UserGroups");
                     }
                 );
+            builder.HasMany(u => u.RefreshTokens).WithOne(rt => rt.User).HasForeignKey(rt => rt.UserId).OnDelete(DeleteBehavior.Cascade);
 
             builder.HasData(
 
@@ -36,7 +37,7 @@ namespace TK_UR_BOOK.Infrastructure.Persistence.Configurations
         "admin@123"
     )
                 {
-                    CreatedAt =  new DateTime(2026, 2, 7, 0, 0, 0, DateTimeKind.Utc),
+                    CreatedAt = new DateTime(2026, 2, 7, 0, 0, 0, DateTimeKind.Utc),
                 }
                 );
         }

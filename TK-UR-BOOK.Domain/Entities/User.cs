@@ -16,7 +16,13 @@ namespace TK_UR_BOOK.Domain.Entities
 
         private readonly List<Group> _groups = new();
         public IReadOnlyCollection<Group> Groups => _groups.AsReadOnly();
+        private readonly List<RefreshToken> _refreshTokens = new();
+        public IReadOnlyCollection<RefreshToken> RefreshTokens => _refreshTokens.AsReadOnly();
 
+        public void AddRefreshToken(string token, DateTime expiresAt)
+        {
+            _refreshTokens.Add(RefreshToken.CreateNew(this.Id, token, expiresAt));
+        }
         private User()
         {
         }
