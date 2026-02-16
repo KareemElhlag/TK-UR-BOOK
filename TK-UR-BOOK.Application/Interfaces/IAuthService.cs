@@ -15,7 +15,7 @@ namespace TK_UR_BOOK.Application.Interfaces
         Task<Result<bool>> ResendConfirmationEmail(string email);
         Task<Result<AuthResponseDto>> LogIn(LogInCommand command);
         Task<Result<string>> GenrateToken(User user);
-        Task<Result<AuthResponseDto>> RefreshToken(string accesToken, string refreshToken);
+        Task<Result<AuthResponseDto>> RefreshAccesToken(string accesToken, string refreshToken);
 
         Task<Result<RefreshToken>> UpdateRefreshToken(RefreshToken Token);
 
