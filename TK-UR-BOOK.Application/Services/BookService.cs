@@ -6,6 +6,7 @@ using TK_UR_BOOK.Domain.Entities;
 using TK_UR_BOOK.Domain.Enums;
 using TK_UR_BOOK.Domain.ValueObjects;
 using TK_UR_BOOK.Application.UseCases.BookQuery;
+using TK_UR_BOOK.Application.UseCases.Purchasing;
 
 namespace TK_UR_BOOK.Application.Services
 {
@@ -13,10 +14,12 @@ namespace TK_UR_BOOK.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly GetBooksQueryHandler _getBooksQueryHandler;
-        public BookService(IUnitOfWork unitOfWork, GetBooksQueryHandler getBooksQueryHandler)
+        private readonly GetBookAllPurchaseQureyHandler _getBookAllPurchaseQureyHandler;
+        public BookService(IUnitOfWork unitOfWork, GetBooksQueryHandler getBooksQueryHandler, GetBookAllPurchaseQureyHandler getBookAllPurchaseQureyHandler)
         {
             _unitOfWork = unitOfWork;
             _getBooksQueryHandler = getBooksQueryHandler;
+            _getBookAllPurchaseQureyHandler = getBookAllPurchaseQureyHandler;
         }
         public async Task<Result<Guid>> CreateBookAsync(CreateBookDto dto)
         {
@@ -36,9 +39,9 @@ namespace TK_UR_BOOK.Application.Services
 
         }
 
-        public async Task<Result<List<BookDetailesDto>>> GetAllBooks(GetBookQuery query )
+        public async Task<Result<List<BookDetailesDto>>> GetAllBooks(GetBookQuery query)
         {
-           var books = await _getBooksQueryHandler.Handle(query);
+            var books = await _getBooksQueryHandler.Handle(query);
             return books;
         }
 
@@ -99,5 +102,25 @@ namespace TK_UR_BOOK.Application.Services
                 return Result.Failure(ex.Message);
             }
         }
+
+        public async Task<Result> MarkBookAsOutOfStockAsync(BookId id)
+        {
+            var book = await _unitOfWork.Repository<Book>().GetByIdAsync(id);
+            if (book == null)
+            {
+                return Result.Failure("Book not found");
+            }
+            book.MarkAsOutOfStock();
+            _unitOfWork.Repository<Book>().Update(book);
+            await _unitOfWork.SaveChangesAsync();
+            return Result.Success();
+        }
+
+        public async Task<Result> GetBookPurchasesAsync(GetBookAllPurchaseQurey command)
+        {
+            var purchases = await _getBookAllPurchaseQureyHandler.Handler(command);
+            return Result.Success(purchases);
+        }
     }
+
 }

@@ -2,6 +2,7 @@
 using TK_UR_BOOK.Application.DTOs;
 using TK_UR_BOOK.Application.Interfaces;
 using TK_UR_BOOK.Application.UseCases.BookQuery;
+using TK_UR_BOOK.Application.UseCases.Purchasing;
 using TK_UR_BOOK.Domain.Comman;
 
 namespace TK_UR_BOOK.Controllers
@@ -67,6 +68,23 @@ namespace TK_UR_BOOK.Controllers
             if (result.IsSuccess)
                 return Ok(result);
             return NotFound(result.Error);
+        }
+        [HttpPut("MarkAsOutOfStock")]
+        public async Task<IActionResult> MarkBookAsOutOfStockAsync([FromQuery] BookId id)
+        {
+            var result = await _bookService.MarkBookAsOutOfStockAsync(id);
+            if (result.IsSuccess)
+                return Ok(new { Message = "Book Marked as Out of Stock Successfully" });
+            return NotFound(result.Error);
+        }
+        [HttpGet("Purchases")]
+        public async Task<IActionResult> GetBookPurchasesAsync([FromQuery] GetBookAllPurchaseQurey query)
+        {
+            var result = await _bookService.GetBookPurchasesAsync(query);
+            if (result.IsSuccess)
+                return Ok(result);
+            return NotFound(result.Error);
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using TK_UR_BOOK.Application.Interfaces;
+using TK_UR_BOOK.Application.UseCases.Purchasing;
 using TK_UR_BOOK.Domain.Common;
 using TK_UR_BOOK.Domain.Entities;
 using TK_UR_BOOK.Domain.Enums;
@@ -9,8 +10,13 @@ namespace TK_UR_BOOK.Application.UseCases.Payment
     public class PaymentWebhookCommandHandler
     {
         private readonly IUnitOfWork _unitOfWork;
-        public PaymentWebhookCommandHandler(IUnitOfWork unitOfWork) => _unitOfWork = unitOfWork;
-
+        private readonly CreatePurchaseCommandHandler _createPurchaseCommandHandler;
+        public PaymentWebhookCommandHandler(IUnitOfWork unitOfWork
+            , CreatePurchaseCommandHandler createPurchaseCommandHandler)
+        {
+            _unitOfWork = unitOfWork;
+            _createPurchaseCommandHandler = createPurchaseCommandHandler;
+        }
         public async Task<Result> Handler(ConfirmPurchaseCommand command)
         {
             var isAlreadyProsses = await _unitOfWork.Repository<Purchase>().GetFirstOrDefaultAsync(P => P.TransactionId == command.TransactionId);
@@ -24,12 +30,12 @@ namespace TK_UR_BOOK.Application.UseCases.Payment
 
             var paidAmount = new Money(command.Amount, parsedCurrency);
 
-            var purchase = new Purchase(
-                 command.UserId,
-                 command.BookId,
-                 paidAmount,
-                 command.TransactionId
-                );
+            var purchase = await _createPurchaseCommandHandler.Handler(new CreateParchaseCommand(
+                command.UserId,
+                command.BookId,
+                paidAmount,
+                command.TransactionId));
+
 
             var activity = new UserActivity(
                 command.UserId,
@@ -37,7 +43,6 @@ namespace TK_UR_BOOK.Application.UseCases.Payment
             ActivationType.PurchaseConfirmed,
             $"Transaction: {command.TransactionId}"
                 );
-            await _unitOfWork.Repository<Purchase>().AddAsync(purchase);
             await _unitOfWork.Repository<UserActivity>().AddAsync(activity);
 
             await _unitOfWork.SaveChangesAsync();

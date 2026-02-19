@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TK_UR_BOOK.Application.Interfaces;
 using TK_UR_BOOK.Application.UseCases.UserCommands;
-using TK_UR_BOOK.Domain.Common;
 using TK_UR_BOOK.Domain.Entities;
 
 namespace TK_UR_BOOK.Controllers

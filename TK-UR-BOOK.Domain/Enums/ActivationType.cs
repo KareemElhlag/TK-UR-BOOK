@@ -7,5 +7,6 @@
         Like = 3,
         Search = 4,
         PurchaseConfirmed= 5,
+        rating = 6
     }
 }

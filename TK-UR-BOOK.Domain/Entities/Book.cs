@@ -71,5 +71,10 @@ namespace TK_UR_BOOK.Domain.Entities
         {
             IsDeleted = true;
         }
+
+        public void MarkAsOutOfStock()
+        {
+            StockQuantity = 0;
+        }
     }
 }
