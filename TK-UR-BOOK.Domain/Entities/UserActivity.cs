@@ -1,4 +1,5 @@
 ﻿using TK_UR_BOOK.Domain.Comman;
+using TK_UR_BOOK.Domain.Enums;
 
 namespace TK_UR_BOOK.Domain.Entities
 {
@@ -7,7 +8,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public UserId UserId { get; private set; }
         public BookId BookId { get; private set; }
 
-        public string ActivationType { get; private set; }
+        public ActivationType ActivationType { get; private set; }
 
         public string? MetaData { get; private set; }
 
@@ -17,7 +18,7 @@ namespace TK_UR_BOOK.Domain.Entities
         public UserActivity(
             UserId userId,
             BookId bookId
-            , string activationType
+            , ActivationType activationType
             , string? metaData
             )
         {
@@ -28,5 +29,15 @@ namespace TK_UR_BOOK.Domain.Entities
 
         }
 
+        public static UserActivity Create(
+            UserId userId,
+            BookId bookId
+            , ActivationType activationType
+            , string? metaData
+            )
+        {
+            return new UserActivity(userId, bookId, activationType, metaData);
+
+        }
     }
 }

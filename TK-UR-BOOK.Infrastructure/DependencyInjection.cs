@@ -1,16 +1,19 @@
 ﻿using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using TK_UR_BOOK.Application.Interfaces;
 using TK_UR_BOOK.Application.Services;
 using TK_UR_BOOK.Application.UseCases.BookQuery;
+using TK_UR_BOOK.Application.UseCases.Payment;
 using TK_UR_BOOK.Application.Validations.QueryValidator;
+using TK_UR_BOOK.Domain.Comman;
+using TK_UR_BOOK.Domain.Sp_Interface;
 using TK_UR_BOOK.Infrastructure.Persistence;
 using TK_UR_BOOK.Infrastructure.Persistence.DBContext;
 using TK_UR_BOOK.Infrastructure.Repositories;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 
 namespace TK_UR_BOOK.Infrastructure
 {
@@ -28,7 +31,9 @@ namespace TK_UR_BOOK.Infrastructure
             services.AddScoped<GetBooksQueryHandler>();
             services.AddScoped<IHashingPassword , PasswordHasher>();
             var Jwt = configuration.GetSection("Jwt");
-            var secretKey = Jwt["Key"];
+            var secretKey = configuration["Jwt:Key"];
+            if (string.IsNullOrEmpty(secretKey))
+                throw new Exception("JWT Secret Key is missing! Make sure it's in user-secrets or appsettings.json");
 
             services.AddAuthentication(options =>
             {
@@ -36,7 +41,7 @@ namespace TK_UR_BOOK.Infrastructure
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
@@ -44,10 +49,14 @@ namespace TK_UR_BOOK.Infrastructure
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = Jwt["Issuer"],
                     ValidAudience = Jwt["Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secretKey!)),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secretKey)),
                     ClockSkew = TimeSpan.Zero
                 };
             });
+            services.AddHttpContextAccessor();
+            services.AddScoped<IUserContext, UserContext>();
+            services.AddScoped<PaymentWebhookCommandHandler>();
+            services.AddScoped<PaymentWebhookCommandHandler>();
 
 
             return services;

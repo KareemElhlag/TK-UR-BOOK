@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5e1b01a9-6596-425b-b2aa-740213efd7f9")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b22b4fce-c897-44ca-a43f-b2b39ddc8e9c")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TK-UR-BOOK.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+825f6a0c2ca98cdafc420066c90e2a2f8168f128")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b2833bdc8fbf6e85691c0fcfeac16e61729258")]
 [assembly: System.Reflection.AssemblyProductAttribute("TK-UR-BOOK.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TK-UR-BOOK.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

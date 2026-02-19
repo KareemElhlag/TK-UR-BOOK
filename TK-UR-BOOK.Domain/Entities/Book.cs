@@ -60,6 +60,7 @@ namespace TK_UR_BOOK.Domain.Entities
                 throw new InvalidOperationException("Stock quantity cannot be negative");
             StockQuantity = newQuantity;
         }
+        
         public void UpdateDetails(string title, string author, string description)
         {
             Title = title;

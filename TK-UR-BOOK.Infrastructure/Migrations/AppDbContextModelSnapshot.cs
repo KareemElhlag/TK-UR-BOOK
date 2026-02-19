@@ -340,6 +340,8 @@ namespace TK_UR_BOOK.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("RefreshTokens");
                 });
 
@@ -422,9 +424,8 @@ namespace TK_UR_BOOK.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
-                    b.Property<string>("ActivationType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ActivationType")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("BookId")
                         .HasColumnType("uniqueidentifier");
@@ -541,6 +542,17 @@ namespace TK_UR_BOOK.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("TK_UR_BOOK.Domain.Entities.RefreshToken", b =>
+                {
+                    b.HasOne("TK_UR_BOOK.Domain.Entities.User", "User")
+                        .WithMany("RefreshTokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("UserGroup", b =>
                 {
                     b.HasOne("TK_UR_BOOK.Domain.Entities.Group", null)
@@ -559,6 +571,11 @@ namespace TK_UR_BOOK.Infrastructure.Migrations
             modelBuilder.Entity("TK_UR_BOOK.Domain.Entities.Category", b =>
                 {
                     b.Navigation("Books");
+                });
+
+            modelBuilder.Entity("TK_UR_BOOK.Domain.Entities.User", b =>
+                {
+                    b.Navigation("RefreshTokens");
                 });
 #pragma warning restore 612, 618
         }

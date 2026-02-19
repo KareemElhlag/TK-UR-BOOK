@@ -1,0 +1,13 @@
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\bin\Debug\net9.0\TK-UR-BOOK.Domain.deps.json
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\bin\Debug\net9.0\TK-UR-BOOK.Domain.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\bin\Debug\net9.0\TK-UR-BOOK.Domain.pdb
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.AssemblyInfo.cs
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.sourcelink.json
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\refint\TK-UR-BOOK.Domain.dll
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\TK-UR-BOOK.Domain.pdb
+C:\Users\hp\source\repos\TK-UR-BOOK\TK-UR-BOOK.Domain\obj\Debug\net9.0\ref\TK-UR-BOOK.Domain.dll
