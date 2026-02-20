@@ -2,7 +2,10 @@
 using TK_UR_BOOK.Application.DTOs;
 using TK_UR_BOOK.Application.Interfaces;
 using TK_UR_BOOK.Application.UseCases.BookQuery;
+using TK_UR_BOOK.Application.UseCases.Favorites;
 using TK_UR_BOOK.Application.UseCases.Purchasing;
+using TK_UR_BOOK.Application.UseCases.RatingBook;
+using TK_UR_BOOK.Application.UseCases.RatingBooks;
 using TK_UR_BOOK.Domain.Comman;
 
 namespace TK_UR_BOOK.Controllers
@@ -12,10 +15,23 @@ namespace TK_UR_BOOK.Controllers
     public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
+        private readonly CreateRatingCommandHandle _createRatingCommandHandle;
+        private readonly GetBookRatingQureyHandler _getBookRatingQureyHandler;
+        private readonly DeletRatingCommandHandler _deletRatingCommandHandler;
+        private readonly ToggleFavoriteCommandHandler _toggleFavoriteCommandHandler;
 
-        public BookController(IBookService bookService)
+        public BookController(IBookService bookService,
+            CreateRatingCommandHandle createRatingCommandHandle,
+            GetBookRatingQureyHandler getBookRatingQureyHandler,
+            DeletRatingCommandHandler deletRatingCommandHandler,
+            ToggleFavoriteCommandHandler toggleFavoriteCommandHandler
+            )
         {
             _bookService = bookService;
+            _createRatingCommandHandle = createRatingCommandHandle;
+            _getBookRatingQureyHandler = getBookRatingQureyHandler;
+            _deletRatingCommandHandler = deletRatingCommandHandler;
+            _toggleFavoriteCommandHandler = toggleFavoriteCommandHandler;
         }
 
         [HttpPost]
@@ -84,6 +100,49 @@ namespace TK_UR_BOOK.Controllers
             if (result.IsSuccess)
                 return Ok(result);
             return NotFound(result.Error);
+
+        }
+
+        [HttpPost("CreateRating")]
+        public async Task<IActionResult> CreateRating(CreateRetingCommand command)
+        {
+            var result = await _createRatingCommandHandle.Handler(command);
+            if (result.IsSuccess)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result.Error);
+            }
+        }
+
+        [HttpGet("GetAllRating")]
+        public async Task<IActionResult> GetAllRatingAsync(GetBookRatingQurey query)
+        {
+            var result = await _getBookRatingQureyHandler.Handler(query);
+            if (!result.IsSuccess)
+                return BadRequest(result.Error);
+            return Ok(result);
+        }
+
+        [HttpDelete("DeletRating")]
+        public async Task<IActionResult> DeletRating(DeletRatingCommand command)
+        {
+            var result = await _deletRatingCommandHandler.Handler(command);
+            if (!result.IsSuccess)
+                return BadRequest(result.Error);
+            return Ok(result);
+        }
+
+        [HttpPost("FavoriteToggle")]
+        public async Task<IActionResult> FavToggleAsync(ToggleFavoriteCommand command, CancellationToken ct)
+        {
+
+            var result = await _toggleFavoriteCommandHandler.Handle(command, ct);
+            if (!result.IsSuccess)
+                return BadRequest(result.Error);
+            return Ok(result);
 
         }
     }

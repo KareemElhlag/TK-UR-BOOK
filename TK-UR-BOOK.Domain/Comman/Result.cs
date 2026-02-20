@@ -1,4 +1,6 @@
-﻿namespace TK_UR_BOOK.Domain.Common
+﻿using TK_UR_BOOK.Domain.Entities;
+
+namespace TK_UR_BOOK.Domain.Common
 {
     public class Result
     {
@@ -22,6 +24,11 @@
 
         public static Result<TValue> Success<TValue>(TValue value) => new(value, true, string.Empty);
         public static Result<TValue> Failure<TValue>(string error) => new(default!, false, error);
+
+        public static Result<List<Rating>> Failure(List<Rating>? qureyList)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Result<TValue> : Result

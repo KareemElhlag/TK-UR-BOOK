@@ -295,6 +295,102 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "CreateRating",
+    "RelativePath": "api/Book/CreateRating",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "TK_UR_BOOK.Application.UseCases.RatingBook.CreateRetingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "DeletRating",
+    "RelativePath": "api/Book/DeletRating",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "TK_UR_BOOK.Application.UseCases.RatingBooks.DeletRatingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "FavToggleAsync",
+    "RelativePath": "api/Book/FavoriteToggle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "TK_UR_BOOK.Application.UseCases.Favorites.ToggleFavoriteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "GetAllRatingAsync",
+    "RelativePath": "api/Book/GetAllRating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "TK_UR_BOOK.Application.UseCases.RatingBooks.GetBookRatingQurey",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "MarkBookAsOutOfStockAsync",
+    "RelativePath": "api/Book/MarkAsOutOfStock",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Value",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.BookController",
+    "Method": "GetBookPurchasesAsync",
+    "RelativePath": "api/Book/Purchases",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId.Value",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TK_UR_BOOK.Controllers.PaymentsController",
     "Method": "CreateCheckout",
     "RelativePath": "api/payments/checkout/{bookId}",
@@ -310,6 +406,27 @@
       {
         "Name": "quantity",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TK_UR_BOOK.Controllers.UserActivityController",
+    "Method": "GetUserActivity",
+    "RelativePath": "api/UserActivity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId.value",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId.Value",
+        "Type": "System.Guid",
         "IsRequired": false
       }
     ],

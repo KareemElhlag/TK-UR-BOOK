@@ -15,7 +15,7 @@ namespace TK_UR_BOOK.Application.Interfaces
         Task<Result> SoftDeleteBookAsync(BookId id);
         Task<Result<List<BookDetailesDto>>> GetAllBooks(GetBookQuery query);
         Task<Result> MarkBookAsOutOfStockAsync(BookId id);
-        Task<Result> GetBookPurchasesAsync(GetBookAllPurchaseQurey command)
+        Task<Result> GetBookPurchasesAsync(GetBookAllPurchaseQurey command);
 
     }
 }

@@ -458,6 +458,174 @@
         }
       }
     },
+    "/api/Book/MarkAsOutOfStock": {
+      "put": {
+        "tags": [
+          "Book"
+        ],
+        "parameters": [
+          {
+            "name": "Value",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/Purchases": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "parameters": [
+          {
+            "name": "bookId.Value",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/CreateRating": {
+      "post": {
+        "tags": [
+          "Book"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRetingCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRetingCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRetingCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/GetAllRating": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBookRatingQurey"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBookRatingQurey"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetBookRatingQurey"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/DeletRating": {
+      "delete": {
+        "tags": [
+          "Book"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletRatingCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletRatingCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletRatingCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/FavoriteToggle": {
+      "post": {
+        "tags": [
+          "Book"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleFavoriteCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleFavoriteCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ToggleFavoriteCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/payments/checkout/{bookId}": {
       "post": {
         "tags": [
@@ -500,10 +668,50 @@
           }
         }
       }
+    },
+    "/api/UserActivity": {
+      "get": {
+        "tags": [
+          "UserActivity"
+        ],
+        "parameters": [
+          {
+            "name": "userId.value",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "userId.Value",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "BookId": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "ConfirmEmailCommand": {
         "type": "object",
         "properties": {
@@ -555,6 +763,26 @@
         },
         "additionalProperties": false
       },
+      "CreateRetingCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "$ref": "#/components/schemas/UserId"
+          },
+          "bookId": {
+            "$ref": "#/components/schemas/BookId"
+          },
+          "star": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Currency": {
         "enum": [
           "EGP",
@@ -563,6 +791,25 @@
           "EUR"
         ],
         "type": "string"
+      },
+      "DeletRatingCommand": {
+        "type": "object",
+        "properties": {
+          "ratingId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetBookRatingQurey": {
+        "type": "object",
+        "properties": {
+          "bookId": {
+            "$ref": "#/components/schemas/BookId"
+          }
+        },
+        "additionalProperties": false
       },
       "Group": {
         "type": "object",
@@ -744,6 +991,18 @@
         },
         "additionalProperties": false
       },
+      "ToggleFavoriteCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "$ref": "#/components/schemas/UserId"
+          },
+          "bookId": {
+            "$ref": "#/components/schemas/BookId"
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateBookDto": {
         "type": "object",
         "properties": {
@@ -888,6 +1147,9 @@
     },
     {
       "name": "StripeWebhook"
+    },
+    {
+      "name": "UserActivity"
     }
   ]
 }

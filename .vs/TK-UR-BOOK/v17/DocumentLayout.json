@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.api\\controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book.api\\controllers\\useractivitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\favorites\\togglefavoritecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\favorites\\togglefavoritecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\ratingbooks\\createratingcommandhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\ratingbooks\\createratingcommandhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.domain\\enums\\activationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|solutionrelative:tk-ur-book.domain\\enums\\activationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.domain\\entities\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A375A1-63E5-47EC-B32D-EA3EB1C5D7A4}|TK-UR-BOOK.Domain\\TK-UR-BOOK.Domain.csproj|solutionrelative:tk-ur-book.domain\\entities\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\ratingbooks\\createretingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\ratingbooks\\createretingcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\favorites\\togglefavoritecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\favorites\\togglefavoritecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActivationType.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Enums\\ActivationType.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Domain\\Enums\\ActivationType.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Enums\\ActivationType.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Domain\\Enums\\ActivationType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ToggleFavoriteCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwB8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:59:26.051Z",
+              "WhenOpened": "2026-02-20T00:35:05.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateRatingCommandHandle.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRatingCommandHandle.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRatingCommandHandle.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRatingCommandHandle.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRatingCommandHandle.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Title": "ToggleFavoriteCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:52:02.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateRetingCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRetingCommand.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRetingCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRetingCommand.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\RatingBooks\\CreateRetingCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:49:19.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Entities\\Rating.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Domain\\Entities\\Rating.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Domain\\Entities\\Rating.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Domain\\Entities\\Rating.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T16:43:07.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserActivityController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\UserActivityController.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.API\\Controllers\\UserActivityController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\UserActivityController.cs",
-              "RelativeToolTip": "TK-UR-BOOK.API\\Controllers\\UserActivityController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAwDQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T15:46:28.866Z",
+              "WhenOpened": "2026-02-20T00:32:50.397Z",
               "EditorCaption": ""
             }
           ]

@@ -13,13 +13,10 @@ namespace TK_UR_BOOK.Controllers
     public class UserActivityController : ControllerBase
     {
         private readonly GetUserAllPurchaseQureyHandler _getUserAllPurchaseQureyHandler;
-        private readonly CreateRatingCommandHandle _createRetingCommandHandler;
-        public UserActivityController(GetUserAllPurchaseQureyHandler getUserAllPurchaseQureyHandler,
-            CreateRatingCommandHandle createRatingCommandHandle
+        public UserActivityController(GetUserAllPurchaseQureyHandler getUserAllPurchaseQureyHandler
             )
         {
             _getUserAllPurchaseQureyHandler = getUserAllPurchaseQureyHandler;
-            _createRetingCommandHandler = createRatingCommandHandle;
         }
         [HttpGet]
         public async Task<IActionResult> GetUserActivity([FromQuery] GetUserAllPurchaseQurey qurey)
@@ -37,18 +34,7 @@ namespace TK_UR_BOOK.Controllers
             }
         }
 
-        [HttpPost("CreateRating")]
-        public async Task<IActionResult> CreateRating(CreateRetingCommand command)
-        {
-            var result = await _createRetingCommandHandler.Handler(command);
-            if (result.IsSuccess)
-            {
-                return Ok(result);
-            }
-            else
-            {
-                return BadRequest(result.Error);
-            }
-        }
+        
+ 
     }
 }

@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.api\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book.api\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\favorites\\togglefavoritecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\favorites\\togglefavoritecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\payment\\paymentwebhookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\payment\\paymentwebhookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\payment\\paymentcheckoutcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\payment\\paymentcheckoutcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C343E608-DF13-6B22-FD1B-9BE8EFB7EC88}|TK-UR-BOOK.API\\TK-UR-BOOK.API.csproj|solutionrelative:tk-ur-book.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|c:\\users\\hp\\source\\repos\\tk-ur-book\\tk-ur-book.application\\usecases\\favorites\\togglefavoritecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D44BA2-6CA0-4A46-902D-FA3586840A60}|TK-UR-BOOK.Application\\TK-UR-BOOK.Application.csproj|solutionrelative:tk-ur-book.application\\usecases\\favorites\\togglefavoritecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\appsettings.json",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\appsettings.json",
-              "RelativeToolTip": "TK-UR-BOOK.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-19T14:04:42.994Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaymentCheckoutCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentCheckoutCommandHandler.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentCheckoutCommandHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentCheckoutCommandHandler.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentCheckoutCommandHandler.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAQwEcAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ToggleFavoriteCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommandHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T13:04:24.998Z",
+              "WhenOpened": "2026-02-20T00:35:05.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PaymentWebhookCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentWebhookCommandHandler.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentWebhookCommandHandler.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentWebhookCommandHandler.cs",
-              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Payment\\PaymentWebhookCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Title": "ToggleFavoriteCommand.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "RelativeDocumentMoniker": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "RelativeToolTip": "TK-UR-BOOK.Application\\UseCases\\Favorites\\ToggleFavoriteCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T13:03:08.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StripeWebhookController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\StripeWebhookController.cs",
-              "RelativeDocumentMoniker": "TK-UR-BOOK.API\\Controllers\\StripeWebhookController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\TK-UR-BOOK\\TK-UR-BOOK.API\\Controllers\\StripeWebhookController.cs",
-              "RelativeToolTip": "TK-UR-BOOK.API\\Controllers\\StripeWebhookController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T12:58:57.358Z",
+              "WhenOpened": "2026-02-20T00:32:50.397Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,4 @@
-﻿using FluentValidation;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,7 +6,11 @@ using Microsoft.IdentityModel.Tokens;
 using TK_UR_BOOK.Application.Interfaces;
 using TK_UR_BOOK.Application.Services;
 using TK_UR_BOOK.Application.UseCases.BookQuery;
+using TK_UR_BOOK.Application.UseCases.Favorites;
 using TK_UR_BOOK.Application.UseCases.Payment;
+using TK_UR_BOOK.Application.UseCases.Purchasing;
+using TK_UR_BOOK.Application.UseCases.RatingBooks;
+using TK_UR_BOOK.Application.Validations.PaymentValidator;
 using TK_UR_BOOK.Application.Validations.QueryValidator;
 using TK_UR_BOOK.Domain.Comman;
 using TK_UR_BOOK.Domain.Sp_Interface;
@@ -29,7 +32,7 @@ namespace TK_UR_BOOK.Infrastructure
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<GetBookQueryValidator>();
             services.AddScoped<GetBooksQueryHandler>();
-            services.AddScoped<IHashingPassword , PasswordHasher>();
+            services.AddScoped<IHashingPassword, PasswordHasher>();
             var Jwt = configuration.GetSection("Jwt");
             var secretKey = configuration["Jwt:Key"];
             if (string.IsNullOrEmpty(secretKey))
@@ -56,7 +59,16 @@ namespace TK_UR_BOOK.Infrastructure
             services.AddHttpContextAccessor();
             services.AddScoped<IUserContext, UserContext>();
             services.AddScoped<PaymentWebhookCommandHandler>();
-            services.AddScoped<PaymentWebhookCommandHandler>();
+            services.AddScoped<PaymentCheckoutCommandHandler>();
+            services.AddScoped<CreateRatingCommandHandle>();
+            services.AddScoped<GetBookRatingQureyHandler>();
+            services.AddScoped<DeletRatingCommandHandler>();
+            services.AddScoped<GetBookAllPurchaseQureyHandler>();
+            services.AddScoped<CreatePurchaseCommandHandler>();
+            services.AddScoped<PaymantValidation>();
+            services.AddScoped<ToggleFavoriteCommandHandler>();
+
+
 
 
             return services;
